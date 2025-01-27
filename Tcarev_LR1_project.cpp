@@ -46,10 +46,24 @@ int main() {
                 std::cin >> B;
             }
             double S = A * B;
-            std::cout << "Площадь треугольника равна " << S <<std::endl;
+            std::cout << "Площадь прямоугольника равна " << S <<std::endl;
             break;
         case 4:
-        // Добавить код для нахождения периметра прямоугольника
+             std::cout << "Введите ширину A: ";
+            std::cin >> A;
+            while (A <= 0) {
+                std::cout << "Ошибка! Введите положитльное число A: ";
+                std::cin >> A;
+            }
+            std::cout << "Введите длину B: ";
+            std::cin >> A;
+            while (A <= 0) {
+                std::cout << "Ошибка! Введите положитльное число B: ";
+                std::cin >> B;
+            }
+            double Per = 2 * (A + B);
+            std::cout << "Периметр прямоугольника равна " << Per <<std::endl;
+            break;
 
         default:
             std::cout << "Неверный ввод. Попробуйте снова.\n";
