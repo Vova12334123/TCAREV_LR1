@@ -1,6 +1,9 @@
 #include <iostream>
 
 int main() {
+
+    double A, B;
+
     int choice;
 
     std::cout << "1. Ввести положительное число A.\n";
@@ -12,7 +15,12 @@ int main() {
 
     switch (choice) {
         case 1:
-        //Добавить код для положительного числа A
+            std::cout << "Введите A: ";
+            std::cin >> A;
+            while (A <= 0) {
+                std::cout << "Это не положительное число! Введите положитльное число A: ";
+                std::cin >> A;
+            }
 
         case 2:
         // Добавить код для положительного числа B
